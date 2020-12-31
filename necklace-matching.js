@@ -11,3 +11,17 @@ same_necklace("x", "xx") => false
 same_necklace("x", "") => false
 same_necklace("", "") => true
 */
+
+function matchNecklace(Necklace, matchingNecklace) {
+  copyNecklace = Necklace;
+  for (index=0; index <= Necklace.length; index++) {
+    if (copyNecklace === matchingNecklace) {
+      return true
+    }
+    else {
+      let extraChar = copyNecklace.slice(-1);
+      copyNecklace.concat(extraChar);
+    }
+  }
+  return false;
+}
