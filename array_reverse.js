@@ -14,8 +14,8 @@ reverse([]) ➞ []
 function reverse(arr) {
   newArr = [];
 	for (let index = arr.length - 1; index >= 0; index--) {
-    console.log(index, arr[index]);
-    newArr.push(arr[index]);
+    		console.log(index, arr[index]);
+    		newArr.push(arr[index]);
   }
   return newArr;
 }
